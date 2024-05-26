@@ -1,0 +1,252 @@
+
+
+.destination {
+  display: block;
+  width: 100%; }
+  @media (max-width: 991.98px) {
+    .destination {
+      margin-bottom: 0px; } }
+  .destination .img {
+    display: block;
+    height: 300px; }
+  .destination .img-2 {
+    height: 300px; }
+  .destination .icon {
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    opacity: 0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .destination .icon span {
+      color: #000000; }
+  .destination:hover .icon {
+    opacity: 1; }
+  .destination .text {
+    background: #fbfbfb; }
+
+    .destination .text:hover {
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+    .destination .text h3 {
+      font-size: 15px;
+    font-weight: 400;
+    color: gray; }
+      .destination .text h3 a {
+        color: #000000; }
+    .destination .text span.listing {
+      font-size: 14px; }
+    .destination .text .rate i {
+      font-size: 12px;
+      color: #f9be37;
+      margin: 0; }
+    .destination .text .rate span {
+      padding-left: 2px;
+      font-size: 10px; }
+    .destination .text .one {
+      width: calc(100% - 70px); }
+    .destination .text .two {
+      width: 70px;
+      text-align: right; }
+      .destination .text .two .price {
+        font-weight: 400;
+        font-size: 18px;
+        color: #2f89fc; }
+      .destination .text .two .per-price {
+        font-size: 20px;
+        line-height: 1.4; }
+        .destination .text .two .per-price small {
+          font-size: 12px; }
+    .destination .text .days span {
+      font-size: 13px;
+      color: black; }
+    .destination .text .bottom-area {
+      margin-bottom: 0; }
+      .destination .text .bottom-area span {
+        font-size: 14px; }
+        @media (min-width: 768px) {
+          .destination .text .bottom-area span:last-child {
+            margin-left: 5px; } }
+        .destination .text .bottom-area span:last-child a {
+          background: #08c299;
+          color: #fff;
+          -webkit-border-radius: 4px;
+          -moz-border-radius: 4px;
+          -ms-border-radius: 4px;
+          border-radius: 4px;
+          padding: 3px 5px; }
+          .destination .text .bottom-area span:last-child a:hover {
+            background: #08c299;
+            color: #fff; }
+
+.destination-entry {
+  display: block;
+  height: 300px;
+  position: relative; }
+  @media (max-width: 991.98px) {
+    .destination-entry {
+      margin-bottom: 30px; } }
+  .destination-entry .text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background: #fff;
+    padding: 20px; }
+    .destination-entry .text h3 {
+      font-family: "Abril Fatface", cursive;
+      margin-bottom: 0; }
+
+
+
+.scrollable-x {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+    .scrollable-x.is-scrollable:after {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: 50px;
+        height: 100%;
+        border-radius: 10px 0 0 10px / 50% 0 0 50%;
+        box-shadow: -5px 0 10px rgba(0, 0, 0, 0.25);
+        content: '';
+    }
+
+    .scrollable-x > .pagination {
+        overflow-x: auto;
+    }
+
+        .scrollable-x > .pagination::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .scrollable-x > .pagination::-webkit-scrollbar-track {
+            background: #f0f0f0;
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.15) inset;
+        }
+
+        .scrollable-x > .pagination::-webkit-scrollbar-thumb {
+            background: #ccc;
+        }
+
+.pagination-item, .pagination-navigation, .pagination-more {
+    height: 3.6rem;
+    width: 6.6rem;
+    margin: 0.3rem;
+    font-size: 14px;
+}
+      .pagination-item, .pagination-navigation {
+        background-color: white;
+        color: black;
+        box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+        transition-property: opacity, box-shadow, color, background-color;
+        transition-duration: 160ms;
+        transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+        will-transform: box-shadow;
+     }
+      .pagination-item {
+        padding: 0px 20px;
+     }
+      .pagination-item.active {
+        color: white;
+        background-color: #f56565;
+        box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+     }
+      .pagination-item:hover, .pagination-item:focus {
+        background-color: #f7f7f7;
+     }
+      .pagination-item:hover.active, .pagination-item:focus.active {
+        background-color: #f67878;
+     }
+      .pagination-item:active {
+        background-color: #ededed;
+     }
+      .pagination-item:active.active {
+        background-color: #f89090;
+     }
+      .pagination-navigation {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-decoration: none;
+     }
+      .pagination-navigation.disabled {
+        opacity: 0.6;
+        cursor: default;
+     }
+      .pagination-navigation:hover:not(.disabled), .pagination-navigation:focus:not(.disabled) {
+        background-color: #f7f7f7;
+     }
+      .pagination-navigation:active:not(.disabled) {
+        background-color: #ededed;
+     }
+      .pagination-more {
+        display: inline-flex;
+        align-items: flex-end;
+        justify-content: center;
+     }
+.pagination {
+    display: inline-flex;
+    align-items: center;
+    /*height: 100px;*/
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+      .pagination > li {
+        align-items: center;
+        display: flex;
+     }
+      .pagination button {
+        border: 0;
+        outline: none;
+        cursor: pointer;
+     }
+
+.stage-container .pagination .previous {
+    background: #3498db !important;
+    color: white;
+}
+
+.stage-container .pagination .next {
+    background: #3498db !important;
+    color: white;
+}
+
+
+.pagination.disabled {
+    pointer-events: none;
+    opacity: 0.6;
+}
+      .container {
+        margin: 0 auto;
+        padding: 0 1rem;
+        padding-bottom: 50px;
+     }
+      .controls {
+        margin-bottom: 50px;
+     }
+      .controls input {
+        width: 100px;
+        margin-right: 1rem;
+     }
+
+@media (max-width: 576px) {
+    .mt-xs-5 {
+        margin-top: 5px;
+    }
+}
